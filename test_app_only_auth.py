@@ -29,9 +29,8 @@ def authenticate():
         
 def search(access_token):
     url = 'https://api.twitter.com/1.1/search/tweets.json'
-    auth = {'Authorization': 'Bearer ' + access_token}
 
-    query = {'q': 'square_k'}
+    query = {'q': 'japan'}
     req = urllib2.Request(url+'?'+urllib.urlencode(query))
     req.add_header('Authorization', 'Bearer ' + access_token)
 
